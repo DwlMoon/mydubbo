@@ -1,0 +1,28 @@
+server:
+  port: 8081
+
+
+dubbo:
+  application:
+    name: myApi
+  registry:
+    address: zookeeper://192.168.5.163
+    timeout: 15000
+    port: 2181
+    check: false
+
+  protocol:
+    port: 20880
+
+
+
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.log4j.Log4jImpl
+##    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#
+#
+#spring:
+#  profiles:
+#    active: online

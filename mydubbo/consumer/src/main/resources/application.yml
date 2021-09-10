@@ -1,0 +1,31 @@
+server:
+  port: 8083
+
+
+dubbo:
+  application:
+    name: myConsumer
+
+  registry:
+    address: zookeeper://192.168.5.163
+    timeout: 15000
+    port: 2181
+    check: false
+
+  consumer:
+#    消费者服务都不检查
+    check: false
+    timeout: 2000
+
+
+
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.log4j.Log4jImpl
+##    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#
+#
+#spring:
+#  profiles:
+#    active: online
