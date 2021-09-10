@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 8082
 
 
 dubbo:
@@ -13,7 +13,7 @@ dubbo:
     check: false
 
   consumer:
-#    消费者服务都不检查
+#   启动时检查提供者是否存在，true报错，false忽略
     check: false
     timeout: 2000
 

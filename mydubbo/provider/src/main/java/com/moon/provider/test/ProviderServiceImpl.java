@@ -15,6 +15,6 @@ public class ProviderServiceImpl implements ProviderService {
     @Override
     public String test (String msg) {
         System.out.println("~~~~~~服务 提供者调用~~~~~");
-        return "来自服务提供者的消息 ："+msg;
+        return "来自服务提供者 2 的消息 ："+msg;
     }
 }

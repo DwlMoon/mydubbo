@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 //开启基于注解的dubbo功能
-@EnableDubbo
+@EnableDubbo(scanBasePackages = "com.moon.consumer.test")
 public class ConsumerApplication {
 
     public static void main (String[] args) {

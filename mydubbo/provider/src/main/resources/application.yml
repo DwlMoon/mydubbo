@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 8085
 
 
 dubbo:
@@ -10,14 +10,14 @@ dubbo:
   registry:
     address: zookeeper://192.168.5.163
     timeout: 15000
-    port: 2181
+    port: 2182
     check: false
 
 
 #指定通信规则
   protocol:
     name: dubbo
-    port: 20880
+    port: 20881
 
 #配置dubbo的暴露服务的包的扫描路径（后在启动类上配置）
 #  scan:

@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 public class ConsumerServiceImpl implements ConsumerService {
 
 
-    @DubboReference(version = "1.0.0" ,check = false)
+    @DubboReference(version = "1.0.0" ,stub = "com.moon.consumer.test.providerServiceStub",loadbalance = "roundrobin")
     ProviderService providerService;
 
 
